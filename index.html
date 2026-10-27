@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maíra Web Studio: criação de sites modernos para empresas e empreendedores.">
+  <title>Maíra Web Studio | Criação de Sites</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf8;
+      color: #30252a;
+      line-height: 1.6;
+    }
+    header {
+      padding: 20px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      background: white;
+    }
+    .logo { color: #b76e79; font-size: 22px; font-weight: bold; }
+    nav a {
+      color: #49373c;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+    nav a:hover { color: #b76e79; }
+    .hero {
+      padding: 95px 8%;
+      text-align: center;
+      background: linear-gradient(135deg, #f8e4e5, #fff5eb, #f1d8dc);
+    }
+    .tag {
+      color: #a45d69;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: clamp(36px, 6vw, 62px);
+      line-height: 1.15;
+      margin: 18px auto;
+      max-width: 800px;
+    }
+    h1 span { color: #b76e79; }
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 28px;
+      color: #65535a;
+    }
+    .btn {
+      display: inline-block;
+      padding: 13px 24px;
+      background: #b76e79;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 0;
+      cursor: pointer;
+    }
+    .btn:hover { background: #965461; }
+    section { padding: 70px 8%; }
+    .section-title { text-align: center; margin-bottom: 35px; }
+    .section-title h2 { font-size: 32px; margin-bottom: 8px; }
+    .section-title p { color: #78666c; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+    .card {
+      padding: 28px 23px;
+      background: white;
+      border: 1px solid #f0dfe0;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px #70404b0b;
+    }
+    .card .emoji { font-size: 34px; }
+    .card h3 { margin: 12px 0 8px; }
+    .card p { color: #74636a; font-size: 15px; }
+    .about { background: #f8eeee; text-align: center; }
+    .about p { max-width: 700px; margin: 12px auto; color: #66535a; }
+    .contact { text-align: center; }
+    .contact p { margin: 12px auto 24px; color: #74636a; }
+    footer {
+      background: #35282e;
+      color: #fbecef;
+      text-align: center;
+      padding: 25px 8%;
+      font-size: 13px;
+    }
+    @media (max-width: 600px) {
+      header { justify-content: center; text-align: center; }
+      nav { width: 100%; }
+      nav a { margin: 0 7px; }
+      .hero { padding: 65px 6%; }
+      section { padding: 55px 6%; }
+      .section-title h2 { font-size: 27px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MW. Maíra Web Studio</div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="tag">Sua presença digital começa aqui</div>
+      <h1>Transformamos ideias em <span>sites incríveis.</span></h1>
+      <p>
+        Criamos sites modernos, elegantes e adaptados para celulares,
+        ajudando empresas e empreendedores a crescer no mundo digital.
+      </p>
+      <a class="btn" href="#contato">Solicitar orçamento</a>
+    </section>
+
+    <section id="servicos">
+      <div class="section-title">
+        <h2>Nossos serviços</h2>
+        <p>Soluções digitais para destacar sua marca.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">💻</div>
+          <h3>Sites empresariais</h3>
+          <p>Apresente sua empresa, seus serviços e seus diferenciais na internet.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">📱</div>
+          <h3>Sites responsivos</h3>
+          <p>Uma experiência bonita e organizada no celular, tablet e computador.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">🎨</div>
+          <h3>Design personalizado</h3>
+          <p>Um visual pensado para combinar com a identidade da sua marca.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">🌐</div>
+          <h3>Presença digital</h3>
+          <p>Uma página profissional para apresentar seu negócio aos clientes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="section-title">
+        <h2>Sobre a Maíra Web Studio</h2>
+      </div>
+      <p>
+        Somos uma marca em construção, apaixonada por criatividade,
+        tecnologia e design. Nosso objetivo é ajudar pequenos negócios
+        a apresentarem suas ideias de forma profissional na internet.
+      </p>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="section-title">
+        <h2>Vamos criar seu site?</h2>
+        <p>Conte sua ideia e vamos conversar sobre seu projeto.</p>
+      </div>
+      <p>Entre em contato para solicitar um orçamento.</p>
+      <button class="btn" onclick="mostrarContato()">
+        Quero meu site
+      </button>
+      <p id="mensagem" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Maíra Web Studio · Sua empresa no mundo digital.</p>
+  </footer>
+
+  <script>
+    function mostrarContato() {
+      document.getElementById("mensagem").textContent =
+        "Adicione seu WhatsApp ou Instagram aqui para receber clientes!";
+    }
+  </script>
+</body>
+</html>
